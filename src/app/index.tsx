@@ -1,12 +1,19 @@
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button } from 'react-native-paper';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App to start working on your app!</Text>
-      <Link href='/test'>test</Link>
+      <Link href='/test' asChild>
+
+        <Button mode='contained'>
+          Test
+        </Button>
+
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
