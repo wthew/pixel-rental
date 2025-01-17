@@ -2,6 +2,7 @@ import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { Button, Text } from 'react-native-paper';
+import ConsoleCard from '../../components/ConsoleCard';
 
 export default function App() {
   return (
@@ -13,7 +14,9 @@ export default function App() {
           Test
         </Button>
 
+
       </Link>
+        <ConsoleCard />
       <StatusBar style="auto" />
     </View>
   );
